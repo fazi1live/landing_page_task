@@ -36,9 +36,10 @@
 }
 
 .products .topContent h2 {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #fbb034;
   width: 150px;
   font-family: 'Luckiest Guy', cursive;
+  color: #00bce4;
 }
 
 .products .col-lg-4 {
@@ -46,7 +47,9 @@
   align-items: center;
   justify-content: center;
 }
-
+.products strong, .products h4{
+  color: #00bce4;
+}
 .products .box {
   border: 1px solid #fbb034;
   border-radius: 10px;
@@ -66,9 +69,10 @@
 }
 
 .resources .topContent h2 {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #00bce4;
   width: 150px;
   font-family: 'Luckiest Guy', cursive;
+  color: #fbb034;
 }
 
 .resources .col-lg-5 {
@@ -88,4 +92,49 @@
   border: 10px solid #fbb034;
   margin-top: -50px;
   margin-left: -50px;
+}
+
+.resources p{
+  color: #00bce4;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel,
+.carousel img{
+  height: auto;
+}
+.about h1{
+  font-size: 30px !important;
+  margin-bottom: 20px !important;
+  width: 250px !important;
+  text-align: center;
+}
+.about p{
+  text-align: center;
+}
+
+.resources .col-lg-6 .row{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.resources .col-lg-6 .col-lg-5{
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 80px !important;
+}
+.products .topContent, .resources .topContent{
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.products .topContent p, .resources .topContent p{
+  text-align: center;
+}
 }
