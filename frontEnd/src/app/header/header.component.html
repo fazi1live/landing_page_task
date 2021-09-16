@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <header>
+    <a href="#" class="logo"><strong>Legate</strong></a>
+    <ul>
+      <li><a href="#">Who We Are?</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Resources</a></li>
+      <li (click)="login()"><a href="#">Login</a></li>
+      <li (click)="register()"><a href="#">Create User</a></li>
+    </ul>
+  </header>
+</div>
+<div class="createUserForm" *ngIf="isRegister">
+  <form>
+    <input type="text" placeholder="Enter First Name">
+    <input type="text" placeholder="Enter Last Name">
+    <input type="email" placeholder="Enter Email">
+    <input type="password" placeholder="Enter Password">
+    <div class="btns">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    <button class="btn btn-primary" (click)="cancelReg()" type="button">Cancel</button>
+    </div>
+  </form>
+</div>
+<div class="loginUserForm" *ngIf="isLogin">
+  <form>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <div class="btns">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    <button class="btn btn-primary" (click)="cancelLog()" type="button">Cancel</button>
+    </div>
+    <hr>
+    <div class="link text-center"><a href="#">Create Account</a></div>
+  </form>
+</div>
